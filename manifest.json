@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "Holychords extends",
+    "description": "Lyrics viewer",
+    "version": "1.0",
+    "icons": {
+        "16": "extends.png",
+        "48": "extends.png",
+        "128": "extends.png"
+    },
+    "content_scripts": [{
+        "matches": ["<all_urls>", "https://holychords.com/*"],
+        "js": ["popup.js"],
+        "run_at": "document_end"
+    }]
+}
